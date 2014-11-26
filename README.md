@@ -3,6 +3,9 @@
 Uses Active Support Instrumentation to monitor queries and displays the queries
 per request and total query duration in [Peek](https://github.com/peek/peek).
 
+![peek-active_record-query](https://cloud.githubusercontent.com/assets/86003/5198533/228698a2-7507-11e4-9c7a-004db0d42b06.png)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -29,7 +32,7 @@ Peek.into Peek::Views::ActiveRecordQuery
 
 Optionally include the `peek/views/active_record_query` JavaScript file in your
 application to lists requests using `console.table` and expose the request log
-as 'window.active_record_query':
+as 'window.active_record_query'. In `app/assets/javascripts/application.coffee`:
 
 ```coffeescript
 #= require peek/views/active_record_query
